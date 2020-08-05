@@ -71,7 +71,7 @@ Importing the source `.vue` file:
 
 ```js
 // main.js
-import HelloWorld from 'component-library/src/components';
+import HelloWorld from 'teste-ui/src/components';
 Vue.use(HelloWorld);
 ```
 
@@ -79,7 +79,7 @@ Importing the bundled `.js`:
 
 ```js
 // main.js
-import HelloWorld from 'component-library';
+import HelloWorld from 'teste-ui';
 Vue.use(HelloWorld);
 ```
 
@@ -91,13 +91,13 @@ Importing the source `.vue` file:
 
 ```js
 // component.vue
-import HelloWorld from "component-library/src/components/HelloWorld";
+import HelloWorld from "teste-ui/src/components/HelloWorld";
 
 export default {
   name: "Tester",
   components: {
     HelloWorld,
-    Footer: () => import("component-library/src/components/Footer"),
+    Footer: () => import("teste-ui/src/components/Footer"),
   }
 }
 </script>
@@ -107,7 +107,7 @@ Importing the bundled `.js` components individually.
 
 ```js
 // component.vue
-import { HelloWorld } from "component-library";
+import { HelloWorld } from "teste-ui";
 
 export default {
   name: "Tester",
@@ -124,7 +124,7 @@ export default {
 
 The styles are written in SCSS and can be compiled upon building this library.
 They can be loaded into an application that doesn't have SCSS loading
-capability by referencing/importing the `component-library.css` file which is
+capability by referencing/importing the `teste-ui.css` file which is
 created in the `dist` folder of this repository when executing `npm run build`.
 
 In order to enable this functionality, an edit has to be made in
@@ -132,7 +132,7 @@ In order to enable this functionality, an edit has to be made in
 or set to true, so that the compiled `.css` file(s) are created upon build.
 
 ```js
-import 'component-library/dist/component-library.css';
+import 'teste-ui/dist/teste-ui.css';
 ```
 
 #### Loading SCSS Directly

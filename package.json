@@ -1,11 +1,10 @@
 {
-  "name": "component-library",
-  "version": "1.2.0",
+  "name": "teste-ui",
+  "version": "0.0.20",
   "description": "Modular, reusable components and styles for use in web applications.",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name component-library src/index.js",
+    "build": "vue-cli-service build --target lib --name teste-ui src/index.js",
     "lint": "vue-cli-service lint --fix",
     "build-storybook": "build-storybook",
     "build:all": "npm run build && npm run build:app && npm run build-storybook",
@@ -16,10 +15,10 @@
     "prerelease": "npm run lint --fix && npm run build:all",
     "release": "standard-version"
   },
-  "main": "dist/component-library.common.js",
-  "unpkg": "dist/component-library.umd.min.js",
-  "cdn": "dist/component-library.umd.min.js",
-  "browser": "dist/component-library.umd.min.js",
+  "main": "dist/teste-ui.common.js",
+  "unpkg": "dist/teste-ui.umd.min.js",
+  "cdn": "dist/teste-ui.umd.min.js",
+  "browser": "dist/teste-ui.umd.min.js",
   "files": [
     "src/components",
     "src/styles",
